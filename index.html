@@ -129,22 +129,10 @@
 </head>
 
 <body id="root">
-      <audio id="audioz" src="audio.mp3"></audio>
-    <script>
-        // Replace this URL with your desired .mp3 URL
-        var audio = document.getElementById("audioz");
-
-        function playAudio() {
-            audio.play();
-        }
-
-        function pauseAudio() {
-            audio.pause();
-        }
-        window.onload = function() {
-            playAudio();
-        };
-    </script>
+     <audio controls autoplay loop>
+  <source src="audio.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
     <div id="loader" class="lds-ripple">
         <div></div>
         <div></div>
